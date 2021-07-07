@@ -54,20 +54,25 @@ export class Magician extends Character {
   }
 }
 
-export class Daemon extends Bowerman {
+export class Daemon extends Character {
   constructor(name) {
     super(name, 'Daemon');
+    this.attack = 25;
+    this.defence = 25;
   }
 }
 
-export class Undead extends Swordsman {
+export class Undead extends Character {
   constructor(name) {
     super(name, 'Undead');
+    this.attack = 40;
+    this.defence = 10;
   }
 }
 
 export class Zombie extends Magician {
   constructor(name) {
-    super(name, 'Zombie');
+    super(name);
+    this.type = 'Zombie';
   }
 }

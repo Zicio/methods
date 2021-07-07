@@ -66,11 +66,14 @@ test('class Undead', () => {
 test('class Zombie', () => {
   const expectedAttack = 10;
   const expectedDefence = 40;
+  const expectedType = 'Zombie';
   const newClass = new classes.Zombie('Bob');
   const receivedAttack = newClass.attack;
   const receivedDefence = newClass.defence;
+  const receivedType = newClass.type;
   expect(receivedAttack).toBe(expectedAttack);
   expect(receivedDefence).toBe(expectedDefence);
+  expect(receivedType).toBe(expectedType);
 });
 
 test('throws on type', () => {
