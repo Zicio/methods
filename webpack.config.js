@@ -30,4 +30,5 @@ module.exports = {
       filename: './index.html',
     }),
   ],
+  devtool: 'eval-cheap-source-map',
 };
